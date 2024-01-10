@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.video-container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Para que haya espacio entre las imágenes */
+}
+
+.video-item {
+    position: relative;
+    margin: 2px;
+    overflow: hidden;
+    width: 19%; /* Ancho máximo de cada elemento */
+}
+
+.overlay-image {
+    width: 100%; /* Ajustar el ancho al 100% para que sea responsivo dentro de .video-item */
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+}
+
+.hover-video {
+    width: 100%; /* Ajustar el ancho al 100% para que sea responsivo dentro de .video-item */
+    height: auto;
+}
